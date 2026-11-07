@@ -1,3 +1,5 @@
+import ProjectFit from "./components/ProjectFit";
+
 const services = [
   {
     number: "01",
@@ -206,6 +208,8 @@ export default function Home() {
           <p className="form-note">Your email app will open with your message addressed to hello@sleekengineers.co.zw.</p>
         </form>
       </section>
+
+      <ProjectFit />
 
       <footer className="footer section-frame">
         <div className="footer-brand">
