@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Learn how Sleek Engineers helps ambitious businesses build better digital products from Zimbabwe.",
+    "Learn how Sleek Engineering helps ambitious businesses build better digital products from Zimbabwe.",
 };
 
 const principles = [
@@ -20,7 +20,7 @@ export default function AboutPage() {
       <section className="page-intro section-frame">
         <div className="section-kicker">01 / Our story</div>
         <div>
-          <p className="page-lead">Sleek Engineers is a Zimbabwean software company helping growing teams turn ambitious ideas into useful, resilient digital products.</p>
+          <p className="page-lead">Sleek Engineering is a Zimbabwean software company helping growing teams turn ambitious ideas into useful, resilient digital products.</p>
           <p className="page-copy">We bring product thinking, design, engineering, and cybersecurity together under one roof. That means fewer handoffs, clearer decisions, and technology that stays aligned with the people it is meant to serve.</p>
         </div>
       </section>
@@ -49,11 +49,11 @@ function PageHeader({ current, title }: { current: string; title: React.ReactNod
 }
 
 function SiteNav() {
-  return <nav className="nav-shell page-nav" aria-label="Main navigation"><Link className="brand" href="/" aria-label="Sleek Engineers home"><span className="brand-mark">SE</span><span className="brand-name">Sleek<br />Engineers</span></Link><div className="nav-links"><a href="/about">About</a><a href="/services">Services</a><a href="/work">Work</a><a href="/contact">Contact</a></div><a className="nav-cta" href="/contact">Start a project <ArrowUpRight /></a></nav>;
+  return <nav className="nav-shell page-nav" aria-label="Main navigation"><Link className="brand" href="/" aria-label="Sleek Engineering home"><span className="brand-mark">SE</span><span className="brand-name">Sleek<br />Engineering</span></Link><div className="nav-links"><a href="/about">About</a><a href="/services">Services</a><a href="/work">Work</a><a href="/contact">Contact</a></div><a className="nav-cta" href="/contact">Start a project <ArrowUpRight /></a></nav>;
 }
 
 function SiteFooter() {
-  return <footer className="footer section-frame"><div className="footer-brand"><span className="brand-mark">SE</span><p>Digital products with<br />purpose, from Zimbabwe.</p></div><div className="footer-meta"><a href="mailto:hello@sleekengineers.co.zw">hello@sleekengineers.co.zw</a><span>Harare, Zimbabwe · Available worldwide</span><span>© 2026 Sleek Engineers</span></div></footer>;
+  return <footer className="footer section-frame"><div className="footer-brand"><span className="brand-mark">SE</span><p>Digital products with<br />purpose, from Zimbabwe.</p></div><div className="footer-meta"><a href="mailto:hello@sleekengineers.co.zw">hello@sleekengineers.co.zw</a><span>Harare, Zimbabwe · Available worldwide</span><span>© 2026 Sleek Engineering</span></div></footer>;
 }
 
 function ArrowUpRight() {

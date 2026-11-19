@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sleekengineers.co.zw"),
+  metadataBase: new URL("https://sleekengineering.co.zw"),
   title: {
-    default: "Sleek Engineers | Digital products from Zimbabwe",
-    template: "%s | Sleek Engineers",
+    default: "Sleek Engineering | Digital products from Zimbabwe",
+    template: "%s | Sleek Engineering",
   },
   description:
-    "Sleek Engineers builds secure, high-performing web and mobile products for ambitious businesses and SMEs in Zimbabwe and beyond.",
+    "Sleek Engineering builds secure, high-performing web and mobile products for ambitious businesses and SMEs in Zimbabwe and beyond.",
   keywords: [
     "software development Zimbabwe",
     "web development Harare",
@@ -31,20 +31,20 @@ export const metadata: Metadata = {
     "Python",
     "Node.js",
   ],
-  authors: [{ name: "Sleek Engineers" }],
-  creator: "Sleek Engineers",
+  authors: [{ name: "Sleek Engineering" }],
+  creator: "Sleek Engineering",
   openGraph: {
     type: "website",
     locale: "en_ZW",
-    url: "https://sleekengineers.co.zw",
-    siteName: "Sleek Engineers",
-    title: "Sleek Engineers | Build bold. Move smart.",
+    url: "https://sleekengineering.co.zw",
+    siteName: "Sleek Engineering",
+    title: "Sleek Engineering | Build bold. Move smart.",
     description:
       "Secure digital products and software engineering for ambitious businesses from Zimbabwe.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sleek Engineers | Build bold. Move smart.",
+    title: "Sleek Engineering | Build bold. Move smart.",
     description:
       "Secure digital products and software engineering for ambitious businesses from Zimbabwe.",
   },

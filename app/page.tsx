@@ -50,12 +50,12 @@ export default function Home() {
   return (
     <main>
       <nav className="nav-shell" aria-label="Main navigation">
-        <a className="brand" href="#top" aria-label="Sleek Engineers home">
+        <a className="brand" href="#top" aria-label="Sleek Engineering home">
           <span className="brand-mark">SE</span>
           <span className="brand-name">
             Sleek
             <br />
-            Engineers
+            Engineering
           </span>
         </a>
         <div className="nav-links">
@@ -159,7 +159,7 @@ export default function Home() {
           <br />
           <span>It creates momentum.</span>
         </blockquote>
-        <p>— The Sleek Engineers principle</p>
+        <p>— The Sleek Engineering principle</p>
       </section>
 
       <section className="approach section-frame" id="approach">
@@ -195,7 +195,7 @@ export default function Home() {
         <div className="contact-heading">
           <div className="section-kicker">05 / Let&apos;s talk</div>
           <h2>Have a challenge?<br /><em>Let&apos;s make it real.</em></h2>
-          <p>Tell us what you&apos;re working on, or share feedback about your experience with Sleek Engineers.</p>
+          <p>Tell us what you&apos;re working on, or share feedback about your experience with Sleek Engineering.</p>
         </div>
         <form className="feedback-form" action="mailto:hello@sleekengineers.co.zw" method="post" encType="text/plain">
           <label htmlFor="name">Your name</label>
@@ -219,7 +219,7 @@ export default function Home() {
         <div className="footer-meta">
           <a href="mailto:hello@sleekengineers.co.zw">hello@sleekengineers.co.zw</a>
           <span>Harare, Zimbabwe · Available worldwide</span>
-          <span>© 2026 Sleek Engineers</span>
+          <span>© 2026 Sleek Engineering</span>
         </div>
       </footer>
     </main>
