@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   turbopack: {
     rules: {
-      "*.css": {
+      // CSS Modules use Next.js's built-in handling to retain scoped classes.
+      "globals.css": {
         loaders: ["@tailwindcss/turbopack"],
         as: "*.css",
       },

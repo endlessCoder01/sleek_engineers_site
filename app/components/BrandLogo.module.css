@@ -1,0 +1,40 @@
+.logo {
+  aspect-ratio: 4 / 3;
+  display: block;
+  flex-shrink: 0;
+  isolation: isolate;
+  position: relative;
+  width: 96px;
+  transition: transform 180ms ease;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.logo:hover {
+  transform: translateY(-2px);
+}
+
+.large {
+  width: 224px;
+}
+
+.large::before {
+  background: radial-gradient(ellipse, rgb(0 132 255 / 12%), transparent 70%);
+  border-radius: 50%;
+  content: "";
+  inset: -28px;
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 760px) {
+  .large { width: 180px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo { transition: none; }
+  .logo:hover { transform: none; }
+}

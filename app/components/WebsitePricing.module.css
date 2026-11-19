@@ -1,0 +1,301 @@
+.section {
+  padding-bottom: 140px;
+  scroll-margin-top: 32px;
+}
+
+.heading {
+  align-items: end;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.kicker {
+  color: var(--muted);
+  font-size: .875rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.heading h2 {
+  font-size: clamp(38px, 5vw, 66px);
+  letter-spacing: -3px;
+  line-height: .98;
+  margin-top: 18px;
+}
+
+.heading h2 em {
+  color: var(--orange);
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.intro {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 325px;
+}
+
+.package {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+}
+
+.offer {
+  background: var(--ink);
+  color: var(--white);
+  padding: 42px;
+}
+
+.offerLabel {
+  color: var(--brand-light);
+  font-size: .875rem;
+  font-weight: 700;
+}
+
+.price {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 25px 0 20px;
+}
+
+.price strong {
+  font-size: clamp(70px, 7vw, 100px);
+  font-weight: 700;
+  letter-spacing: -6px;
+  line-height: 1;
+}
+
+.price span {
+  color: var(--brand-light);
+  font-size: .875rem;
+}
+
+.billingNote {
+  color: var(--muted-on-dark);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.billingNote strong {
+  color: var(--brand-light);
+  display: block;
+}
+
+.billingNote span {
+  display: block;
+  margin-top: 4px;
+}
+
+.offerDescription {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.highlights {
+  border-top: 1px solid var(--line-on-dark);
+  color: var(--muted-on-dark);
+  display: grid;
+  font-size: 1rem;
+  gap: 12px;
+  line-height: 1.5;
+  margin: 28px 0;
+  padding: 24px 0 0 20px;
+}
+
+.highlights li::marker {
+  color: var(--brand-light);
+}
+
+.cta {
+  background: var(--brand-strong);
+  color: var(--white);
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  padding: 16px 24px;
+  transition: background .2s;
+}
+
+.cta:hover {
+  background: var(--brand-soft);
+  color: var(--ink);
+}
+
+.cta:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 5px;
+}
+
+.support {
+  color: var(--muted-on-dark);
+  font-size: .875rem;
+  line-height: 1.5;
+  margin-top: 18px;
+  max-width: 310px;
+}
+
+.breakdown {
+  background: var(--white);
+  padding: 42px;
+}
+
+.breakdown h3, .paymentHeading h3 {
+  font-size: 1.5rem;
+  letter-spacing: -.8px;
+}
+
+.table {
+  border-collapse: collapse;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.table th {
+  font-weight: 400;
+  text-align: left;
+}
+
+.table th, .table td {
+  border-bottom: 1px solid var(--line);
+  padding: 23px 0;
+  vertical-align: top;
+}
+
+.table td {
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  padding-left: 20px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.priceTerm {
+  color: var(--muted);
+  display: block;
+  font-size: .875rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.itemName {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.itemDescription {
+  color: var(--muted);
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 9px;
+}
+
+.table tfoot th, .table tfoot td {
+  border-bottom: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+.paymentHeading {
+  align-items: baseline;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+.paymentHeading p {
+  color: var(--muted);
+  font-size: .875rem;
+}
+
+.stages {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.stages li {
+  border-top: 2px solid var(--line);
+  padding-top: 20px;
+}
+
+.stageHeading {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.stageHeading h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.stageHeading strong {
+  font-size: 1.125rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.stages p {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.paymentMethods {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .875rem;
+  line-height: 1.6;
+  padding-top: 20px;
+}
+
+.paymentMethods strong {
+  color: var(--ink);
+  margin-right: 12px;
+}
+
+.visuallyHidden {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (max-width: 960px) {
+  .offer, .breakdown { padding: 32px; }
+  .stages { gap: 20px; }
+}
+
+@media (max-width: 760px) {
+  .section { padding-bottom: 95px; }
+  .heading { align-items: start; flex-direction: column; gap: 24px; margin-bottom: 32px; }
+  .heading h2 { letter-spacing: -2px; }
+  .intro { max-width: 100%; }
+  .package, .stages { grid-template-columns: 1fr; }
+  .offer, .breakdown { padding: 28px 24px; }
+  .price strong { font-size: 80px; }
+  .table td { padding-left: 12px; }
+  .paymentHeading { align-items: start; flex-direction: column; gap: 10px; }
+  .stages { gap: 24px; }
+}

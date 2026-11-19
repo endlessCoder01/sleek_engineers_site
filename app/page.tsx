@@ -1,4 +1,6 @@
 import ProjectFit from "./components/ProjectFit";
+import WebsitePricing from "./components/WebsitePricing";
+import BrandLogo from "./components/BrandLogo";
 
 const services = [
   {
@@ -51,15 +53,11 @@ export default function Home() {
     <main>
       <nav className="nav-shell" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Sleek Engineering home">
-          <span className="brand-mark">SE</span>
-          <span className="brand-name">
-            Sleek
-            <br />
-            Engineering
-          </span>
+          <BrandLogo />
         </a>
         <div className="nav-links">
           <a href="/services">Services</a>
+          <a href="#pricing">Pricing</a>
           <a href="/about">Approach</a>
           <a href="/contact">Contact</a>
         </div>
@@ -74,9 +72,8 @@ export default function Home() {
             <span className="eyebrow-dot" />
             Digital products from Zimbabwe
           </p>
-          <h1>
-            Build bold.
-            <br />
+          <h1 className="hero-title">
+            <span>Build bold.</span>{" "}
             <em>Move smart.</em>
           </h1>
           <p className="hero-lede">
@@ -87,17 +84,16 @@ export default function Home() {
             <a className="button button-dark" href="#contact">
               Tell us what you&apos;re building <ArrowUpRight />
             </a>
-            <a className="text-link" href="/services">
-              Explore our work <span>↓</span>
+            <a className="text-link" href="#pricing">
+              View website pricing
             </a>
           </div>
         </div>
-        <div className="hero-art" aria-label="Abstract illustration of connected digital systems">
+        <div className="hero-art" role="img" aria-label="Sleek Engineering logo surrounded by connected digital systems">
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
           <div className="hero-core">
-            <span>SE</span>
-            <small>BUILD<br />BETTER</small>
+            <BrandLogo large decorative />
           </div>
           <span className="art-label label-one">WEB</span>
           <span className="art-label label-two">MOBILE</span>
@@ -151,6 +147,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <WebsitePricing />
 
       <section className="statement section-frame">
         <div className="statement-mark">“</div>
@@ -213,7 +211,7 @@ export default function Home() {
 
       <footer className="footer section-frame">
         <div className="footer-brand">
-          <span className="brand-mark">SE</span>
+          <a className="brand" href="/" aria-label="Sleek Engineering home"><BrandLogo /></a>
           <p>Digital products with<br />purpose, from Zimbabwe.</p>
         </div>
         <div className="footer-meta">
