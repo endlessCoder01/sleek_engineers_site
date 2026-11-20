@@ -195,7 +195,7 @@ export default function Home() {
           <h2>Have a challenge?<br /><em>Let&apos;s make it real.</em></h2>
           <p>Tell us what you&apos;re working on, or share feedback about your experience with Sleek Engineering.</p>
         </div>
-        <form className="feedback-form" action="mailto:hello@sleekengineers.co.zw" method="post" encType="text/plain">
+        <form className="feedback-form" action="mailto:info@sleekengineering.co.zw" method="post" encType="text/plain">
           <label htmlFor="name">Your name</label>
           <input id="name" name="name" type="text" placeholder="Jane Doe" required />
           <label htmlFor="email">Email address</label>
@@ -203,7 +203,7 @@ export default function Home() {
           <label htmlFor="message">How can we help?</label>
           <textarea id="message" name="message" rows={4} placeholder="A new website, mobile app, security review..." required />
           <button className="button button-light" type="submit">Send your note <ArrowUpRight /></button>
-          <p className="form-note">Your email app will open with your message addressed to hello@sleekengineers.co.zw.</p>
+          <p className="form-note">Your email app will open with your message addressed to info@sleekengineering.co.zw.</p>
         </form>
       </section>
 
@@ -215,7 +215,7 @@ export default function Home() {
           <p>Digital products with<br />purpose, from Zimbabwe.</p>
         </div>
         <div className="footer-meta">
-          <a href="mailto:hello@sleekengineers.co.zw">hello@sleekengineers.co.zw</a>
+          <a href="mailto:info@sleekengineering.co.zw">info@sleekengineering.co.zw</a>
           <span>Harare, Zimbabwe · Available worldwide</span>
           <span>© 2026 Sleek Engineering</span>
         </div>

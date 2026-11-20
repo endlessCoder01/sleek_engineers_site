@@ -29,8 +29,12 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Cloudflare Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run `npm run build` and deploy the generated `out/` directory. For Git-connected
+Cloudflare Pages, select **Next.js (Static HTML Export)**, production branch
+`main`, build command `npm run build`, and output directory `out`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The primary domain is **https://sleekengineering.co.zw**. See the
+[Cloudflare deployment guide](docs/cloudflare-deployment.md) for the full setup,
+custom-domain activation, and local-upload commands.
