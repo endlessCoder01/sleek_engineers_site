@@ -16,8 +16,8 @@ npm run build
 The deployable website is generated in `out/`. The configuration disables
 Next.js server image optimization so the transparent logo is served directly
 on Cloudflare Pages. Webpack is used for production builds; local development
-continues to use Turbopack. `.node-version` pins the Node.js version used to
-verify the production export.
+continues to use Turbopack. `.node-version` pins Node.js 24.21.0 to match the
+installed local version.
 
 ## Git-connected deployment
 
