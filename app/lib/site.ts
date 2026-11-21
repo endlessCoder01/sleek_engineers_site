@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const site = {
   name: "Sleek Engineering",
   alternateName: "SleekEngineering",
-  url: "https://sleekengineering.co.zw",
+  url: "https://www.sleekengineering.co.zw",
   email: "info@sleekengineering.co.zw",
   title: "Sleek Engineering | Software & Web Development Zimbabwe",
   description:

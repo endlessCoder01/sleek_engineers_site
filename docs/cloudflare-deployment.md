@@ -1,6 +1,6 @@
 # Deploy Sleek Engineering to Cloudflare Pages
 
-Primary website: **https://sleekengineering.co.zw**
+Primary website: **https://www.sleekengineering.co.zw**
 
 This repository is a Next.js static website, not a Vite application. The older
 downloaded Cloudflare configuration package's `React (Vite)` preset and `dist`
@@ -64,7 +64,7 @@ You can also upload the contents of `out/` as a folder or ZIP in the dashboard
 when creating a Direct Upload project. Upload the built files, not the source
 repository or `.next/` directory.
 
-## Connect sleekengineering.co.zw
+## Connect www.sleekengineering.co.zw
 
 The domain has been added to Cloudflare and is awaiting nameserver activation.
 
@@ -75,17 +75,18 @@ The domain has been added to Cloudflare and is awaiting nameserver activation.
    exact assigned pair. Preserve the existing DNS records needed for email and
    other services when moving DNS to this zone.
 3. Once the zone is **Active**, open the deployed **Pages project > Custom
-   domains > Set up a domain** and enter `sleekengineering.co.zw`.
+   domains > Set up a domain** and enter `www.sleekengineering.co.zw`.
 4. Let Pages create the website DNS record and finish HTTPS certificate
    activation. Use the Pages-assigned target; do not invent an IP address or
    `pages.dev` hostname.
-5. If `www.sleekengineering.co.zw` should also serve the website, attach it through
-   the same Custom domains workflow. Keep `sleekengineering.co.zw` as the
-   primary public address.
+5. Keep `www.sleekengineering.co.zw` as the primary public address. If the apex
+   `sleekengineering.co.zw` should also work, attach it to the project and use a
+   Cloudflare redirect rule to send visitors to the www address, preserving the
+   path and query string.
 6. Verify HTTPS, all five pages, the logo, and the email links on the custom
    domain after activation.
 
-The metadata already uses `https://sleekengineering.co.zw`. Mail links and form
+The metadata already uses `https://www.sleekengineering.co.zw`. Mail links and form
 recipients use `info@sleekengineering.co.zw`. Deploying the website does not
 create that mailbox or configure email forwarding; the forms currently open
 the visitor's email app.
@@ -99,14 +100,14 @@ with **SleekEngineering** as an alternate spelling. These help search engines
 understand the business; they do not guarantee indexing or a first-place rank.
 
 1. Deploy the updated `out/` directory and confirm the custom domain works over
-   HTTPS. Open `https://sleekengineering.co.zw/robots.txt` and
-   `https://sleekengineering.co.zw/sitemap.xml` to check the files are public.
+   HTTPS. Open `https://www.sleekengineering.co.zw/robots.txt` and
+   `https://www.sleekengineering.co.zw/sitemap.xml` to check the files are public.
 2. Add `sleekengineering.co.zw` as a Domain property in
    [Google Search Console](https://search.google.com/search-console/). Verify
    ownership using the exact DNS TXT value Google supplies in the Cloudflare
    DNS zone. The value must come from your own Google account.
-3. Submit `https://sleekengineering.co.zw/sitemap.xml` in the Sitemaps report.
-4. Use URL Inspection for `https://sleekengineering.co.zw/`, run a live test,
+3. Submit `https://www.sleekengineering.co.zw/sitemap.xml` in the Sitemaps report.
+4. Use URL Inspection for `https://www.sleekengineering.co.zw/`, run a live test,
    and request indexing. Monitor the indexing report and branded queries.
 5. Use the same business name and website address on the business's genuine
    profiles and listings so people can identify and link to the official site.

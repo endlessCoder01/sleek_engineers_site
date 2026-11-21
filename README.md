@@ -35,6 +35,6 @@ Run `npm run build` and deploy the generated `out/` directory. For Git-connected
 Cloudflare Pages, select **Next.js (Static HTML Export)**, production branch
 `main`, build command `npm run build`, and output directory `out`.
 
-The primary domain is **https://sleekengineering.co.zw**. See the
+The primary domain is **https://www.sleekengineering.co.zw**. See the
 [Cloudflare deployment guide](docs/cloudflare-deployment.md) for the full setup,
 custom-domain activation, and local-upload commands.
