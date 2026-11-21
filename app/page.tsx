@@ -1,6 +1,48 @@
 import ProjectFit from "./components/ProjectFit";
 import WebsitePricing from "./components/WebsitePricing";
 import BrandLogo from "./components/BrandLogo";
+import { createPageMetadata, site } from "./lib/site";
+
+export const metadata = createPageMetadata({
+  title: site.title,
+  description: site.description,
+  path: "/",
+});
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${site.url}/#organization`,
+      name: site.name,
+      alternateName: site.alternateName,
+      url: `${site.url}/`,
+      description: site.description,
+      email: site.email,
+      logo: {
+        "@type": "ImageObject",
+        url: new URL(site.logo, site.url).toString(),
+        width: 1448,
+        height: 1086,
+      },
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Harare",
+        addressCountry: "ZW",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${site.url}/#website`,
+      name: site.name,
+      alternateName: site.alternateName,
+      url: `${site.url}/`,
+      inLanguage: "en-ZW",
+      publisher: { "@id": `${site.url}/#organization` },
+    },
+  ],
+};
 
 const services = [
   {
@@ -51,6 +93,12 @@ function Spark() {
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData).replace(/</g, "\\u003c"),
+        }}
+      />
       <nav className="nav-shell" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Sleek Engineering home">
           <BrandLogo />
@@ -77,8 +125,8 @@ export default function Home() {
             <em>Move smart.</em>
           </h1>
           <p className="hero-lede">
-            We help ambitious businesses turn good ideas into fast, secure
-            digital products people love to use.
+            Sleek Engineering helps businesses in Zimbabwe turn good ideas into
+            fast, secure websites and mobile apps.
           </p>
           <div className="hero-actions">
             <a className="button button-dark" href="#contact">

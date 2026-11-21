@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { site } from "./lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,13 +14,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sleekengineering.co.zw"),
+  metadataBase: new URL(site.url),
   title: {
-    default: "Sleek Engineering | Digital products from Zimbabwe",
+    default: site.title,
     template: "%s | Sleek Engineering",
   },
-  description:
-    "Sleek Engineering builds secure, high-performing web and mobile products for ambitious businesses and SMEs in Zimbabwe and beyond.",
+  description: site.description,
   keywords: [
     "software development Zimbabwe",
     "web development Harare",
@@ -36,17 +36,15 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_ZW",
-    url: "https://sleekengineering.co.zw",
-    siteName: "Sleek Engineering",
-    title: "Sleek Engineering | Build bold. Move smart.",
-    description:
-      "Secure digital products and software engineering for ambitious businesses from Zimbabwe.",
+    url: site.url,
+    siteName: site.name,
+    title: site.title,
+    description: site.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sleek Engineering | Build bold. Move smart.",
-    description:
-      "Secure digital products and software engineering for ambitious businesses from Zimbabwe.",
+    title: site.title,
+    description: site.description,
   },
   robots: { index: true, follow: true },
 };

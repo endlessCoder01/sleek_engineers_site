@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import BrandLogo from "../components/BrandLogo";
+import { createPageMetadata } from "../lib/site";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Contact",
-  description: "Contact Sleek Engineering about software development, mobile apps, or cybersecurity.",
-};
+  description: "Contact Sleek Engineering in Harare, Zimbabwe for website development, mobile apps, or cybersecurity. Email info@sleekengineering.co.zw.",
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return <main><PageHeader current="Contact" title={<>Let&apos;s make<br /><em>something useful.</em></>} /><section className="contact-page section-frame"><div><p className="page-lead">Tell us what you&apos;re building, what is getting in the way, or what you want to improve. We&apos;ll get back to you by email.</p><div className="contact-details"><span>Based in</span><strong>Harare, Zimbabwe<br />Working worldwide</strong><span>Email us</span><a href="mailto:info@sleekengineering.co.zw">info@sleekengineering.co.zw</a></div></div><form className="feedback-form contact-form" action="mailto:info@sleekengineering.co.zw" method="post" encType="text/plain"><label htmlFor="contact-name">Your name</label><input id="contact-name" name="name" type="text" placeholder="Jane Doe" required /><label htmlFor="contact-email">Email address</label><input id="contact-email" name="email" type="email" placeholder="jane@company.com" required /><label htmlFor="contact-message">Tell us a little more</label><textarea id="contact-message" name="message" rows={6} placeholder="What are you hoping to build?" required /><button className="button button-dark" type="submit">Send your note <ArrowUpRight /></button><p className="form-note">Your email app will open with your message addressed to us.</p></form></section><SiteFooter /></main>;

@@ -90,6 +90,32 @@ recipients use `info@sleekengineering.co.zw`. Deploying the website does not
 create that mailbox or configure email forwarding; the forms currently open
 the visitor's email app.
 
+## Google Search after deployment
+
+The build includes `robots.txt`, a sitemap with all five public pages, unique
+canonical URLs, page-specific sharing metadata, and homepage `WebSite` and
+`Organization` structured data. The preferred site name is **Sleek Engineering**,
+with **SleekEngineering** as an alternate spelling. These help search engines
+understand the business; they do not guarantee indexing or a first-place rank.
+
+1. Deploy the updated `out/` directory and confirm the custom domain works over
+   HTTPS. Open `https://sleekengineering.co.zw/robots.txt` and
+   `https://sleekengineering.co.zw/sitemap.xml` to check the files are public.
+2. Add `sleekengineering.co.zw` as a Domain property in
+   [Google Search Console](https://search.google.com/search-console/). Verify
+   ownership using the exact DNS TXT value Google supplies in the Cloudflare
+   DNS zone. The value must come from your own Google account.
+3. Submit `https://sleekengineering.co.zw/sitemap.xml` in the Sitemaps report.
+4. Use URL Inspection for `https://sleekengineering.co.zw/`, run a live test,
+   and request indexing. Monitor the indexing report and branded queries.
+5. Use the same business name and website address on the business's genuine
+   profiles and listings so people can identify and link to the official site.
+
+Google decides which pages it indexes and how they rank. Crawling can take days
+to weeks; repeatedly requesting indexing does not speed it up. See Google's
+[site-name guidance](https://developers.google.com/search/docs/appearance/site-names)
+and [recrawl guidance](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl).
+
 ## Official references
 
 - [Static Next.js on Pages](https://developers.cloudflare.com/pages/framework-guides/nextjs/deploy-a-static-nextjs-site/)

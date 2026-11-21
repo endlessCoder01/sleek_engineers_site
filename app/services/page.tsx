@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import BrandLogo from "../components/BrandLogo";
 import WebsitePricing from "../components/WebsitePricing";
+import { createPageMetadata } from "../lib/site";
 
-export const metadata: Metadata = {
-  title: "Services",
+export const metadata = createPageMetadata({
+  title: "Website & Software Development Services",
   description:
     "Explore Sleek Engineering's US$80 website launch package with a one-year domain and the first month of hosting. Hosting is US$15/month.",
-};
+  path: "/services",
+});
 
 const services = [
   ["01", "Web development", "Websites and platforms built to load quickly, communicate clearly, and grow with your business.", "React · Next.js · Laravel"],

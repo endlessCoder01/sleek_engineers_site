@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import BrandLogo from "../components/BrandLogo";
+import { createPageMetadata } from "../lib/site";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "Work",
   description: "Selected digital product work and capabilities from Sleek Engineering.",
-};
+  path: "/work",
+});
 
 const projects = [
   ["01", "Digital foundations", "A flexible web platform for a growing business ready to look as capable as it is.", "Web · Strategy · Development"],

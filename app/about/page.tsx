@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import BrandLogo from "../components/BrandLogo";
+import { createPageMetadata } from "../lib/site";
 
-export const metadata: Metadata = {
+export const metadata = createPageMetadata({
   title: "About",
   description:
     "Learn how Sleek Engineering helps ambitious businesses build better digital products from Zimbabwe.",
-};
+  path: "/about",
+});
 
 const principles = [
   ["Clarity over complexity", "We make the hard things understandable, from the first conversation to the final handover."],
