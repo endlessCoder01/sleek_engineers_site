@@ -4,7 +4,7 @@
   flex-shrink: 0;
   isolation: isolate;
   position: relative;
-  width: 96px;
+  width: 84px;
   transition: transform 180ms ease;
 }
 
@@ -31,6 +31,7 @@
 }
 
 @media (max-width: 760px) {
+  .logo { width: 72px; }
   .large { width: 180px; }
 }
 
