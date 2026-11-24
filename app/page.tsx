@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ProjectFit from "./components/ProjectFit";
 import WebsitePricing from "./components/WebsitePricing";
 import BrandLogo from "./components/BrandLogo";
@@ -133,7 +134,7 @@ export default function Home() {
               Tell us what you&apos;re building <ArrowUpRight />
             </a>
             <a className="text-link" href="#pricing">
-              View website pricing
+              View pricing
             </a>
           </div>
         </div>
@@ -259,7 +260,7 @@ export default function Home() {
 
       <footer className="footer section-frame">
         <div className="footer-brand">
-          <a className="brand" href="/" aria-label="Sleek Engineering home"><BrandLogo /></a>
+          <Link className="brand" href="/" aria-label="Sleek Engineering home"><BrandLogo /></Link>
           <p>Digital products with<br />purpose, from Zimbabwe.</p>
         </div>
         <div className="footer-meta">

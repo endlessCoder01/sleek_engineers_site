@@ -299,3 +299,157 @@
   .paymentHeading { align-items: start; flex-direction: column; gap: 10px; }
   .stages { gap: 24px; }
 }
+
+.serviceGrid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.serviceCard {
+  background: var(--white);
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 26px 24px;
+}
+
+.serviceCardFeatured {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--white);
+}
+
+.serviceName {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.4;
+  min-height: 50px;
+}
+
+.servicePrice {
+  align-content: end;
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+  min-height: 86px;
+  margin: 14px 0 18px;
+}
+
+.servicePrice strong {
+  font-size: clamp(36px, 3.7vw, 52px);
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.pricePrefix {
+  color: var(--muted);
+  flex-basis: 100%;
+  font-size: .875rem;
+}
+
+.currency {
+  color: var(--muted);
+  font-size: .875rem;
+}
+
+.servicePrice.quotePrice strong {
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+
+.serviceDescription {
+  color: var(--muted);
+  font-size: .9375rem;
+  line-height: 1.65;
+  margin-bottom: 26px;
+}
+
+.serviceCta {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  color: var(--brand-strong);
+  display: flex;
+  font-size: .875rem;
+  font-weight: 700;
+  min-height: 44px;
+  margin-top: auto;
+  padding-top: 14px;
+}
+
+.serviceCta:hover { color: var(--ink); }
+.serviceCta:focus-visible, .packageSummary:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 5px;
+}
+.serviceCardFeatured .serviceDescription { color: var(--muted-on-dark); }
+.serviceCardFeatured .currency, .serviceCardFeatured .pricePrefix { color: var(--brand-light); }
+.serviceCardFeatured .serviceCta { border-color: var(--line-on-dark); color: var(--brand-light); }
+.serviceCardFeatured .serviceCta:hover { color: var(--white); }
+
+.backendSection { margin-top: 48px; }
+.backendHeading {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.backendHeading h3 {
+  font-size: clamp(24px, 3vw, 30px);
+  letter-spacing: -1px;
+  line-height: 1.3;
+}
+.backendIntro { color: var(--muted); font-size: .9375rem; line-height: 1.6; }
+.backendGrid { display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.backendCard { background: var(--white); border: 1px solid var(--line); min-width: 0; padding: 26px 24px; }
+.backendCard h4 { font-size: 1.125rem; line-height: 1.4; margin: 0; }
+.backendCard p { color: var(--muted); font-size: .9375rem; line-height: 1.6; }
+.backendCard .backendPrice {
+  color: var(--ink);
+  font-size: clamp(25px, 2.6vw, 32px);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 14px 0 12px;
+}
+
+.packageDetails { background: var(--white); border: 1px solid var(--line); margin-top: 36px; }
+.packageSummary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  list-style: none;
+  padding: 22px 24px;
+}
+.packageSummary::-webkit-details-marker { display: none; }
+.packageSummary::after { content: "+"; color: var(--brand-strong); flex-shrink: 0; font-size: 28px; font-weight: 400; }
+.packageDetails[open] .packageSummary { border-bottom: 1px solid var(--line); }
+.packageDetails[open] .packageSummary::after { content: "−"; }
+.packageDetailsBody { padding: 24px; }
+
+@media (max-width: 1100px) {
+  .serviceGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .serviceName { min-height: 0; }
+}
+
+@media (max-width: 760px) {
+  .serviceGrid, .backendGrid { grid-template-columns: 1fr; }
+  .serviceCard, .backendCard { padding: 24px; }
+  .servicePrice { margin-top: 12px; min-height: 68px; }
+  .servicePrice strong { font-size: 44px; }
+  .servicePrice.quotePrice strong { font-size: 30px; }
+  .backendSection { margin-top: 36px; }
+  .packageSummary { gap: 16px; padding: 18px 20px; }
+  .packageDetailsBody { padding: 16px; }
+  .packageDetailsBody .offer, .packageDetailsBody .breakdown { padding: 24px 18px; }
+}

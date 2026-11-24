@@ -6,7 +6,7 @@ import { createPageMetadata } from "../lib/site";
 export const metadata = createPageMetadata({
   title: "Website & Software Development Services",
   description:
-    "Explore Sleek Engineering's US$80 website launch package with a one-year domain and the first month of hosting. Hosting is US$15/month.",
+    "Static websites for US$80, dynamic websites from US$150 and custom software from US$550. Explore backend estimates and quotes for PWAs and mobile apps.",
   path: "/services",
 });
 
