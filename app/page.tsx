@@ -2,6 +2,7 @@ import Link from "next/link";
 import ProjectFit from "./components/ProjectFit";
 import WebsitePricing from "./components/WebsitePricing";
 import BrandLogo from "./components/BrandLogo";
+import SocialLinks from "./components/SocialLinks";
 import { createPageMetadata, site } from "./lib/site";
 
 export const metadata = createPageMetadata({
@@ -264,7 +265,7 @@ export default function Home() {
           <p>Digital products with<br />purpose, from Zimbabwe.</p>
         </div>
         <div className="footer-meta">
-          <a href="mailto:info@sleekengineering.co.zw">info@sleekengineering.co.zw</a>
+          <a href="mailto:info@sleekengineering.co.zw">info@sleekengineering.co.zw</a><SocialLinks />
           <span>Harare, Zimbabwe · Available worldwide</span>
           <span>© 2026 Sleek Engineering</span>
         </div>
